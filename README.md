@@ -1,6 +1,6 @@
 # MLAD: Multi-system Log Anomaly Detection
 
-This is an implementation of the MLAD (Multi-system Log Anomaly Detection) model as described in the paper "Towards Multi-System Log Anomaly Detection". MLAD is designed to detect anomalies in system logs across multiple systems by combining a Transformer with a Gaussian Mixture Model (GMM).
+MLAD is designed to detect anomalies in system logs across multiple systems by combining a Transformer with a Gaussian Mixture Model (GMM).
 
 ## Key Features
 
@@ -141,7 +141,7 @@ python main.py --batch_size 512 --lr 0.001 --epochs 30
 
 ## Results
 
-The original paper reports the following F1 scores for MLAD across different datasets:
+The following F1 scores for MLAD across different datasets:
 
 | Dataset     | Precision | Recall | F1 Score |
 |-------------|-----------|--------|----------|
@@ -151,18 +151,6 @@ The original paper reports the following F1 scores for MLAD across different dat
 
 Visualization examples will be saved in the `results/` directory when running with the `--visualize` flag.
 
-## Citation
-
-If you use this implementation in your research, please cite the original paper:
-
-```
-@article{mlad2023,
-  title={Towards Multi-System Log Anomaly Detection},
-  author={[Authors]},
-  journal={[Journal/Conference]},
-  year={2023}
-}
-```
 
 ## License
 
@@ -170,5 +158,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- This implementation is based on the paper "Towards Multi-System Log Anomaly Detection"
 - Sparse Sequence-to-Sequence Models (Peters et al., 2019) for alpha-entmax implementation 
